@@ -1,7 +1,7 @@
 from functools import partial
 
 from ..common.xworld_loader_lsj import dataloader
-from .cascade_mask_rcnn_vitdet_b_100ep import (
+from ..eva2_o365_to_coco.cascade_mask_rcnn_vitdet_b_100ep import (
     lr_multiplier,
     model,
     train,
