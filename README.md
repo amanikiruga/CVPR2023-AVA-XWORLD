@@ -16,6 +16,10 @@
   
 - [**EVA @ Hugging Face 🤗 & `timm`**](https://huggingface.co/timm/eva02_large_patch14_448.mim_m38m_ft_in1k)
 
+- [**EVA-CLIP @ Hugging Face 🤗 & `timm`**](https://huggingface.co/timm/eva02_enormous_patch14_plus_clip_224.laion2b_s9b_b144k)
+
+- [**EVA-CLIP @ `open_clip`**](https://github.com/mlfoundations/open_clip/blob/main/src/open_clip/model_configs/EVA02-E-14-plus.json) 
+
 
 
 ## Contact
