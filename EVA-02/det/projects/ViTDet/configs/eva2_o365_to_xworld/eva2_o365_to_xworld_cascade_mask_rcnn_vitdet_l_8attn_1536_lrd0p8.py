@@ -9,6 +9,16 @@ from ..eva2_o365_to_coco.cascade_mask_rcnn_vitdet_b_100ep import (
     get_vit_lr_decay_rate,
 )
 
+from detectron2.data.datasets import register_coco_instances
+
+for split_type in ["train", "val"]:
+    register_coco_instances(
+        f"xworld_{split_type}",
+        {},
+        f"/tmp/{split_type}_xworld.json",
+        f"/tmp/{split_type}_xworld",
+    )
+
 from detectron2.config import LazyCall as L
 from fvcore.common.param_scheduler import *
 from detectron2.solver import WarmupParamScheduler
