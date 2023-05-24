@@ -54,7 +54,7 @@ optimizer.params.lr_factor_func = partial(
 optimizer.params.overrides = {}
 optimizer.params.weight_decay_norm = None
 
-train.max_iter = 40000
+train.max_iter = 15000
 
 train.model_ema.enabled = True
 train.model_ema.device = "cuda"
@@ -70,6 +70,6 @@ lr_multiplier = L(WarmupParamScheduler)(
 )
 
 dataloader.test.num_workers = 0
-dataloader.train.total_batch_size = 1
+dataloader.train.total_batch_size = 16
 
 SOLVER = dict(CHECKPOINT_PERIOD=5000)
