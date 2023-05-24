@@ -28,6 +28,8 @@ from detectron2.config import LazyCall as L
 from fvcore.common.param_scheduler import *
 from detectron2.solver import WarmupParamScheduler
 
+# number of classes is 8
+model.roi_heads.num_classes = 8
 
 model.backbone.net.img_size = 1536
 model.backbone.square_pad = 1536
