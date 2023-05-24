@@ -11,12 +11,17 @@ from ..eva2_o365_to_coco.cascade_mask_rcnn_vitdet_b_100ep import (
 
 from detectron2.data.datasets import register_coco_instances
 
+import os
+
+# Get environment variables
+WORKDIR_USER = os.getenv("WORKDIR_USER")
+
 for split_type in ["train", "val"]:
     register_coco_instances(
         f"xworld_{split_type}",
         {},
-        f"/xworld/{split_type}_xworld.json",
-        f"/xworld/{split_type}_xworld",
+        f"{WORKDIR_USER}/ava-challenge/EVA/EVA-02/det/xworld/{split_type}_xworld.json",
+        f"{WORKDIR_USER}/ava-challenge/EVA/EVA-02/det/xworld/{split_type}_xworld",
     )
 
 from detectron2.config import LazyCall as L
