@@ -75,6 +75,6 @@ lr_multiplier = L(WarmupParamScheduler)(
 )
 
 dataloader.test.num_workers = 0
-dataloader.train.total_batch_size = 16
+dataloader.train.total_batch_size = 8
 
 SOLVER = dict(CHECKPOINT_PERIOD=5000)
