@@ -55,8 +55,8 @@ model.backbone.net.window_block_indexes = (
 )
 
 # optimizer.lr = 4e-5
-# optimizer.lr = 1e-5
-optimizer.lr = 2e-5
+optimizer.lr = 1e-5
+# optimizer.lr = 2e-5
 optimizer.params.lr_factor_func = partial(
     get_vit_lr_decay_rate, lr_decay_rate=0.8, num_layers=24
 )
@@ -64,6 +64,7 @@ optimizer.params.overrides = {}
 optimizer.params.weight_decay_norm = None
 
 train.max_iter = 25000
+# train.max_iter = 12500
 
 train.model_ema.enabled = True
 train.model_ema.device = "cuda"
@@ -83,3 +84,5 @@ dataloader.train.total_batch_size = 16
 
 train.eval_period = 2500
 train.checkpointer.period = 2500
+# train.eval_period = 1250
+# train.checkpointer.period = 1250
