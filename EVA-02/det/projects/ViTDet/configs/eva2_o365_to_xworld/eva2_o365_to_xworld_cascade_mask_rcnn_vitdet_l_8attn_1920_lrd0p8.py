@@ -55,8 +55,8 @@ model.backbone.net.window_block_indexes = (
 )
 
 # optimizer.lr = 4e-5
-optimizer.lr = 1e-5
-# optimizer.lr = 2e-5
+# optimizer.lr = 1e-5
+optimizer.lr = 2e-5
 optimizer.params.lr_factor_func = partial(
     get_vit_lr_decay_rate, lr_decay_rate=0.8, num_layers=24
 )
@@ -80,10 +80,10 @@ lr_multiplier = L(WarmupParamScheduler)(
 )
 
 dataloader.test.num_workers = 0
-dataloader.train.total_batch_size = 8
-# dataloader.train.total_batch_size = 16
+# dataloader.train.total_batch_size = 8
+dataloader.train.total_batch_size = 16
 
-train.eval_period = 2500
-train.checkpointer.period = 500
-# train.eval_period = 1250
-# train.checkpointer.period = 1250
+# train.eval_period = 2500
+# train.checkpointer.period = 500
+train.eval_period = 1250
+train.checkpointer.period = 1000
