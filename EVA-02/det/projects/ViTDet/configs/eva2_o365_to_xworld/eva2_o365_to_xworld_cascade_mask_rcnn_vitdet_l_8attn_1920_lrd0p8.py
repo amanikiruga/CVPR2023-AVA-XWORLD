@@ -1,6 +1,6 @@
 from functools import partial
 
-from ..common.xworld_loader_lsj_original import dataloader
+from ..common.xworld_loader_lsj_1920 import dataloader
 from ..eva2_o365_to_coco.cascade_mask_rcnn_vitdet_b_100ep import (
     lr_multiplier,
     model,
@@ -31,8 +31,8 @@ from detectron2.solver import WarmupParamScheduler
 # number of classes is 8
 model.roi_heads.num_classes = 8
 
-model.backbone.net.img_size = 1536
-model.backbone.square_pad = 1536
+model.backbone.net.img_size = 1920
+model.backbone.square_pad = 1920
 model.backbone.net.patch_size = 16
 model.backbone.net.window_size = 16
 model.backbone.net.embed_dim = 1024
@@ -54,8 +54,8 @@ model.backbone.net.window_block_indexes = (
     + list(range(21, 23))
 )
 
-optimizer.lr = 4e-5
-# optimizer.lr = 1e-5
+# optimizer.lr = 4e-5
+optimizer.lr = 1e-5
 # optimizer.lr = 2e-5
 optimizer.params.lr_factor_func = partial(
     get_vit_lr_decay_rate, lr_decay_rate=0.8, num_layers=24
