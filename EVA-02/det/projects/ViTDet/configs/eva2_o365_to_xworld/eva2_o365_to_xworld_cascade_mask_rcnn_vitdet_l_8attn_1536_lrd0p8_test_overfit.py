@@ -69,7 +69,7 @@ optimizer.params.lr_factor_func = partial(
 optimizer.params.overrides = {}
 optimizer.params.weight_decay_norm = None
 
-train.max_iter = 30000
+train.max_iter = 30500
 # train.max_iter = 12500
 
 train.model_ema.enabled = True
