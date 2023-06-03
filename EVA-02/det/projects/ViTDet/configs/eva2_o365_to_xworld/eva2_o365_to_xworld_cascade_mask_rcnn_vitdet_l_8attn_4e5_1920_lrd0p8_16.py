@@ -85,5 +85,5 @@ dataloader.train.total_batch_size = 16
 
 # train.eval_period = 2500
 # train.checkpointer.period = 500
-train.eval_period = 1250
+train.eval_period = 5000
 train.checkpointer.period = 500
