@@ -63,7 +63,7 @@ optimizer.params.lr_factor_func = partial(
 optimizer.params.overrides = {}
 optimizer.params.weight_decay_norm = None
 
-train.max_iter = 50000
+train.max_iter = 300000
 # train.max_iter = 12500
 
 train.model_ema.enabled = True
@@ -85,5 +85,5 @@ dataloader.train.total_batch_size = 16
 
 # train.eval_period = 2500
 # train.checkpointer.period = 500
-train.eval_period = 5000
+train.eval_period = 300000
 train.checkpointer.period = 500
