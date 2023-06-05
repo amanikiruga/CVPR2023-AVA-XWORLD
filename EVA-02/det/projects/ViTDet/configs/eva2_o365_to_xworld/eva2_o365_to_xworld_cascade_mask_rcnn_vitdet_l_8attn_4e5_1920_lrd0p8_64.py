@@ -20,8 +20,8 @@ for split_type in ["train", "val"]:
     register_coco_instances(
         f"xworld_{split_type}",
         {},
-        f"/tmp/{split_type}_xworld.json",
-        f"/tmp/{split_type}_xworld",
+        f"/lustre/scratch/ava/{split_type}_xworld.json",
+        f"lustre/scratch/ava/{split_type}_xworld",
     )
 
 from detectron2.config import LazyCall as L
