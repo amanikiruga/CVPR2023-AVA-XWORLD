@@ -21,7 +21,7 @@ for split_type in ["train", "val"]:
         f"xworld_{split_type}",
         {},
         f"/lustre/scratch/ava/{split_type}_xworld.json",
-        f"lustre/scratch/ava/{split_type}_xworld",
+        f"/lustre/scratch/ava/{split_type}_xworld",
     )
 
 from detectron2.config import LazyCall as L
