@@ -81,7 +81,7 @@ lr_multiplier = L(WarmupParamScheduler)(
 
 dataloader.test.num_workers = 0
 # dataloader.train.total_batch_size = 8
-dataloader.train.total_batch_size = 64
+dataloader.train.total_batch_size = 32
 
 # train.eval_period = 2500
 # train.checkpointer.period = 500
