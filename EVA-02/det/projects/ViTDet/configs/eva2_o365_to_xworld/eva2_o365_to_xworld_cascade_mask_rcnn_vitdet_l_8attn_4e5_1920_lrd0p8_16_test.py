@@ -90,7 +90,7 @@ dataloader.evaluator.output_dir = (
 )
 
 # dataloader.train.total_batch_size = 8
-dataloader.train.total_batch_size = 16
+dataloader.train.total_batch_size = 32
 
 # train.eval_period = 2500
 # train.checkpointer.period = 500
