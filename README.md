@@ -4,7 +4,7 @@ The relevant files are in the [EVA-02/det](https://github.com/amanikiruga/CVPR20
 * XWorld Dataset config: [link](https://github.com/amanikiruga/CVPR2023-AVA-XWORLD/blob/master/EVA-02/det/configs/common/data/xworld.py)
 * XWorld Loader [link](https://github.com/amanikiruga/CVPR2023-AVA-XWORLD/blob/master/EVA-02/det/projects/ViTDet/configs/common/xworld_loader_lsj_1920.py)
 * Training configs [link](https://github.com/amanikiruga/CVPR2023-AVA-XWORLD/tree/master/EVA-02/det/projects/ViTDet/configs/eva2_o365_to_xworld)
-
+the rest of the files belong to BAAI Vision Team! [BAAI Vision](https://github.com/baaivision/EVA)
 Feel free to email me in case of anything: akiruga [at] udel [dot] edu
 <div align="center">
 
